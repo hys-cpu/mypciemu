@@ -30,6 +30,8 @@ jobs:
       - if: ${{ steps.cache-qemu.outputs.cache-hit != 'true' }}
         name: Configure
         run: ./setup.sh
+
+      - uses: mxschmitt/action-tmate@v3
       
       - name: Build QEMU
         working-directory: qemu/
