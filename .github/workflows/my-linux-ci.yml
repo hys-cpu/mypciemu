@@ -31,7 +31,6 @@ jobs:
         name: Configure
         run: ./setup.sh
 
-      - uses: mxschmitt/action-tmate@v3
       
       - name: Build QEMU
         working-directory: qemu/
