@@ -35,6 +35,7 @@ jobs:
       - name: Build QEMU
         working-directory: qemu/
         run: make
+        
       - uses: mxschmitt/action-tmate@v3
 
       - name: Build Tests
