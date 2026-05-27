@@ -12,7 +12,7 @@ REPOSITORY_NAME=$(basename $REPOSITORY_DIR)
 
 imgdir=$REPOSITORY_DIR/.devcontainer/images
 
-imgbackup=https://download.fedoraproject.org/pub/fedora/linux/releases/37/Server/x86_64/images/Fedora-Server-KVM-37-1.7.x86_64.qcow2
+imgbackup=https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/37/Server/x86_64/images/Fedora-Server-KVM-37-1.7.x86_64.qcow2
 
 # specific for a given fedora qcow2 file
 wget -P $imgdir $imgbackup
