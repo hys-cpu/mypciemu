@@ -36,6 +36,11 @@ jobs:
         working-directory: qemu/
         run: make
         
+      - name: Setup tmux config
+        run: |
+            echo 'set -g history-limit 100000' >> ~/.tmux.conf
+            echo 'set -g mouse on' >> ~/.tmux.conf
+        
       - uses: mxschmitt/action-tmate@v3
 
       - name: Build Tests
