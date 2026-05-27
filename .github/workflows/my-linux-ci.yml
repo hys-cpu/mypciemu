@@ -41,6 +41,11 @@ jobs:
             echo 'set -g history-limit 100000' >> ~/.tmux.conf
             echo 'set -g mouse on' >> ~/.tmux.conf
             chmod 666 /dev/kvm
+
+      - name: source run qemu init scipt
+        run: 
+            source ~/work/pciemu/pciemu$ source .devcontainer/.qemu_config
+            source /home/runner/work/pciemu/pciemu/.devcontainer/images/imagesetup.sh
         
       - uses: mxschmitt/action-tmate@v3
 
